@@ -1,14 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Thasadith&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cormorant+Unicase:wght@500&family=Thasadith&display=swap');
 header{
-    background-color: bisque;
+    background-color: #ffe4c4;
+}
+.h1{
+    text-align: center;
+    font-family: 'Cinzel Decorative';
 }
 .navigation{
-    background-color: darkolivegreen;
+    background-color: rgb(204, 231, 156);
 }
 main{
     background-color: cornflowerblue;
 }
 .sidebar{
-    background-color: goldenrod;
+    background-color: rgb(206, 187, 139);
 }
 .small-sidebar{
     background-color: rebeccapurple;
@@ -20,14 +28,13 @@ footer{
     height: 100vh;
     display: grid;
     grid-template-rows: 1fr 1fr 3fr 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 2px;
 }
 
 
 /* .flex{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex: 1 1 25em;
 }
 
 .box{
