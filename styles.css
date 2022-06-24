@@ -1,110 +1,179 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Thasadith&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cormorant+Unicase:wght@500&family=Thasadith&display=swap');
-header{
-    background-color: #ffe4c4;
-}
-.h1{
-    text-align: center;
-    font-family: 'Cinzel Decorative';
-}
-.navigation{
-    background-color: rgb(204, 231, 156);
-}
-main{
-    background-color: cornflowerblue;
-}
-.sidebar{
-    background-color: rgb(206, 187, 139);
-}
-.small-sidebar{
-    background-color: rebeccapurple;
-}
-footer{
-    background-color: lightcoral;
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
 }
 .grid{
     height: 100vh;
     display: grid;
-    grid-template-rows: 1fr 1fr 3fr 1fr 1fr 1fr;
-    gap: 2px;
+    grid-template-rows: 1fr 1fr 3fr auto-fit;
+    gap: 10px;
+    
+}
+header{
+    /* background-color: aqua; */
+    padding: 1em;
+    justify-content: center;
+    text-align: center;
+    background-image: url(images/blowholes.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed no-repeat;
+    
+    
+}
+h1{
+    animation-duration: 1.5s;
+    animation-name: slidein;
+    padding: 10%;
+    font-family: 'Poiret One';
+    font-size: 6em;
+    font-weight: bolder;
+    color: beige;
+    
+}
+h1:hover{
+    color: rgb(28, 62, 100);
+    animation-duration: 1.5s;
+    animation-name: slideout;
+    font-size: 4em;
+    opacity: 0.2;
+    font-family: 'Cinzel Decorative';
+    
+}
+.navigation{
+    background-color: rgba(255, 228, 196, 0.644);
+    font-family: 'Poiret One';
+    font-size: 4em;
+    text-align: center;
+    opacity: .7;
+}
+.navigation:hover{
+    background-color: rgba(223, 147, 96, 0.61);
+}
+nav ul{
+    
+    padding: 5%;
+    list-style: none;
+    display: flex;
+    flex: 1 1 3em;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(117, 117, 115);
+    padding: 20px;
+}
+a:hover{
+    color: coral;
+    font-size: 1.1em;
+}
+a:active{
+    font-size: .8em;
+    color: rgb(124, 62, 62);
+}
+.content{
+    color: rgb(155, 153, 151);
+    background-color: rgba(107, 107, 146, 0.425);
+    text-align: center;
+    padding: 10%;
+    font-size: 3em;
+    font-family: 'Cinzel Decorative';
+    
+}
+.content:hover{
+    color: black;
+    background-image: url(images/capebeach.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgba(202, 101, 53, 0.623);
+    text-align: center;
+    padding: 10%;
+    font-size: 3em;
+       
 }
 
-
-/* .flex{
-    display: flex;
-    flex: 1 1 25em;
+#quote{
+    color: rgb(255, 250, 240);
+    font-size: 1.3em;
+    
 }
-
-.box{
-    display: flex;
+#quote:hover{
+    color: rgb(97, 80, 55);
+    align-self: center;
+}
+.article{
+    padding: 30px;
     justify-content: center;
     align-items: center;
-    max-width: 80%;
-    max-height: 80%;
-    margin: 20px;
-    background-color: antiquewhite;
+}
 
-} */
+#footer{
+    background-color: rgb(135, 179, 135);
+    background-image: url(images/photographic-background-1540116.jpg);
+    background-size: cover;
+    background-position: bottom;
+    max-width: 100vw;
+    min-height: 5vh;
+    background-attachment: fixed no-repeat;
+    text-align: center;
+    
+}
+#footer:hover{
+    min-height: 50vh;
+    justify-content: center;
+}
 
-@media only screen and (min-width: 720px)  {
+.container{
+    display: flex;
+    align-items: center;
+}
+.social{
+    display: flex;
+}
+
+
+@media only screen and (min-width: 720px) {
     .grid{
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 1fr 1fr 4fr 1fr;
+        grid-template-rows: 1fr 1fr 3fr auto-fit;
     }
     header{
-        grid-column: 1 /span 12;
-        
-    }
-    .navigation{
         grid-column: 1 / span 12;
         
     }
-    main{
-        grid-column: 4 / span 9;
-        
-    }
-    .sidebar{
-        grid-column: span 3;
-        grid-row: 3;
-        
-    }
-    .small-sidebar{
-        grid-column: span 3;
-                
-    }
-    footer{
-        grid-column: 4 / span 9;
-    }
-}    
-@media only screen and (min-width: 1020px)  {
-    .grid{
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 1fr 1fr 4fr 1fr;
-    }
-    header{
-        grid-column: 1 /span 12;
-        
-    }
     .navigation{
-        grid-column: 4 / span 7;
+        grid-column: span 1;
+        grid-row: 2 / 3;
         
     }
     main{
-        grid-column: 4 / span 7;
-        
+        grid-column:  2 / span 12;
+      
     }
-    .sidebar{
-        grid-row: 2 / 4;
-        
-    }
-    .small-sidebar{
-        grid-column: 11 / span 2;
-        grid-row: 2 / 4;                
-    }
+    
     footer{
         grid-column: 1 / span 12;
-        grid-row: 4;
     }
 }
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
