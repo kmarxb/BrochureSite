@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact/contact.css">
+    <title>contact</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="about.html">About</a></li>
+              
+          </ul>
+          </nav>
+    </header>
+    <main>
+        <h1>Let's connect</h1>
+            
+        <form action="index.html" method="POST">
+            <Fieldset>
+                <legend>Your details:</legend>
+                <label for="first_name">First Name</label>
+                <input type="text" name="first_name" id="first_name" placeholder="Your name">
+                <br>
+                <br>
+                <label for="last_name">Last Name</label>
+                <input type="text" name="last_name" id="last_name" placeholder="Your last name">
+                <br>
+                <br>
+                <label for="country">Country</label>
+                <select id="country" name=""><country></country>
+                    <option value="Australia">Australia</option>
+                    <option value="China">China</option>
+                    <option value="England">England</option>
+            </select>
+            </Fieldset>
+            <br>
+            <br>
+            <div>
+                <FIeldset>
+                    <Legend>How did you hear about us?</Legend>
+                    <label for="website">Website</label>
+                    <input type="radio" name="social" id="website">
+                    <label for="Facebook">Facebook</label>
+                    <input type="radio" name="social" id="facebook">
+                </FIeldset>
+            </div>
+            <br>
+            <label for="Comment">Leave a message here</label>
+            <br>
+                <textarea placeholder="Write your message here..." id="Comment" cols="30" rows="10"></textarea>
+            <br>
+            <br>
+            <button class="submit">
+                Send 
+            </button>
+            
+           
+            <button class="dontsubmit">
+                Don't submit
+            </button>
+         
+            
+            <button class="maybesubmit">
+                Maybe submit
+            </button>
+            
+
+        </form>
+    </main>
+    
+</body>
+</html>
