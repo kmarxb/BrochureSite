@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Thasadith&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cormorant+Unicase:wght@500&family=Thasadith&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(170, 106, 46, 0.822);
+    margin: 0;
+}
+.container{
+    display: flex;
+    align-items: center;
+}
+#video{
+    flex: 1 1 0em;
+    background-color: rgba(0, 255, 255, 0.418);
+    background-position: center;
+    object-fit: cover;
+    position: relative;
+    align-items: center;
+    padding: 5px;
+   
+    min-width: 40vw;
+    min-height: 50vh;
+    max-width: 100vw;
+    max-height: fit-content;
+    
+}
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    max-width: 100vw;
+    min-height: 100%;
+    justify-content: center;
+    text-align: center;
+    color: rgb(216, 167, 103);
+  }
+h2{
+      display: flex;
+      font-size: 3em;
+      font-family: 'Poiret One';
+      text-align: center;
+      padding: 5px;
+  }
+h2:hover{
+      font-size: 3.2em;
+      color: rgb(14, 15, 15);
+  }
+.navigation{
+    display: flex;
+    display: inline-block;
+    min-height: 2em;
+    max-height: 5em;
+    max-width: 100vw;
+    padding: 0%;
+    margin: 0;
+    background-color: rgba(255, 228, 196, 0.644);
+    font-family: 'Poiret One';
+    font-size: 2em;
+    opacity: .7;
+    
+    
+  }
+  .navigation:hover{
+    background-color: rgb(255, 208, 0);
+  }
+  nav ul{
+    min-height: 5%;
+    max-height: 5em;
+    max-width: 100vw;
+    justify-content: space-evenly;
+    padding:0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex: 0 1 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+   
+  }
+  nav a{
+    text-decoration: none;
+    color: rgb(90, 90, 90);
+    padding: 5px;
+  }
+  a:hover{
+    color: coral;
+    font-size: 1.1em;
+  }
+  a:active{
+    font-size: .8em;
+    color: rgb(124, 62, 62);
+  }
+@media (max-aspect-ratio: 1/1) {
+    li {
+      height: 20vh;
+    }
+  }
+@media (max-height: 480px) {
+    li {
+      height: 40vh;
+    }
+  }
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+    ul {
+      flex-direction: row;
+    }
+  
+    li {
+      height: auto;
+      width: 100%;
+    }
+  
+    img {
+      width: 100%;
+      max-height: 75vh;
+      min-width: 0;
+    }
+  }
