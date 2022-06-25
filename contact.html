@@ -19,26 +19,29 @@
           </nav>
     </header>
 <body> 
-    <main>
-        <h1>Let's connect</h1>
-            
+
+    <h2>Reach out</h2>
+    <div class="container">
         <form action="index.html" method="POST">
             <Fieldset>
-                <legend>Your details:</legend>
-                <label for="first_name">First Name</label>
-                <input type="text" name="first_name" id="first_name" placeholder="Your name">
+                <legend>Your details</legend>
+                <label for="your_name">Name:</label>
+                <br>
+                <input type="text" name="your_name" id="your_name" placeholder="Your name">
                 <br>
                 <br>
-                <label for="last_name">Last Name</label>
-                <input type="text" name="last_name" id="last_name" placeholder="Your last name">
+                <label for="email">Email:</label>
+                <br>
+                <input type="text" name="email" id="email" placeholder="Your email">
                 <br>
                 <br>
-                <label for="country">Country</label>
-                <select id="country" name=""><country></country>
-                    <option value="Australia">Australia</option>
-                    <option value="China">China</option>
-                    <option value="England">England</option>
-            </select>
+                <label for="mailing">Would you like to recieve our newsletter?</label>
+                <br>
+                <select id="mailing" name="mailing">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                    <option value="Maybe">Maybe</option>
+                </select>
             </Fieldset>
             <br>
             <br>
@@ -49,38 +52,27 @@
                     <input type="radio" name="social" id="website">
                     <label for="Facebook">Facebook</label>
                     <input type="radio" name="social" id="facebook">
+                    <label for="Friends">Friends/family</label>
+                    <input type="radio" name="social" id="friends">
                 </FIeldset>
             </div>
             <br>
-            <label for="Comment">Leave a message here</label>
-            <br>
-                <textarea placeholder="Write your message here..." id="Comment" cols="30" rows="10"></textarea>
-            <br>
-            <br>
-            <button class="submit">
-                Send 
-            </button>
-            
-           
-            <button class="dontsubmit">
-                Don't submit
-            </button>
-         
-            
-            <button class="maybesubmit">
-                Maybe submit
-            </button>
-            
-
-            </form>
-        </main>
+                <label for="comment">Share your thoughts</label>
+                <br>
+                <textarea placeholder="Leave your message here..." id="comment" cols="30" rows="7"></textarea>
+                <br>
+                <br>
+                <input type="submit" value="Submit" id="submit">
+           </form>
+    </div>  
+       
     </body>
 <footer id="footer">
-        
     <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
     <a href="https://www.google.com/search?q=gunditjmara+country&sxsrf=ALiCzsZfcmvMu-l3KEHDFUNH6MDozH3aXQ%3A1656059758997&ei=bne1YtCmPJ2MseMPqfCeiAQ&ved=0ahUKEwjQlaWt18X4AhUdRmwGHSm4B0EQ4dUDCA4&uact=5&oq=gunditjmara+country&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgoIABCABBCHAhAUMgUIABCABDIGCAAQHhAWMgYIABAeEBYyBggAEB4QFjoHCCMQsAMQJzoHCAAQRxCwAzoHCAAQsAMQQzoKCAAQ5AIQsAMYAToSCC4QxwEQrwEQyAMQsAMQQxgCOhUILhDHARCvARDUAhDIAxCwAxBDGAI6DwguENQCEMgDELADEEMYAjoMCC4QyAMQsAMQQxgCOgQIIxAnOgQIABBDOgsILhCABBDHARCvAUoECEEYAEoECEYYAVCGBFjsC2DcD2gBcAB4AIAB5wGIAc0LkgEFMC41LjOYAQCgAQHIARPAAQHaAQYIARABGAnaAQYIAhABGAg&sclient=gws-wiz" target="_blank"
         class="fa fa-google"></a>
     <a href="https://youtu.be/jBootMJrFvY" target="_blank" class="fa fa-youtube"></a>
     <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+    <div class="footer-bottom"><p>Copyright &#169. Kurt Buchholz 2022</p> </div>
 </footer>
 </html>
