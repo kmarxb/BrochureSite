@@ -9,11 +9,13 @@
 }
 body{
     background-color: rgba(170, 106, 46, 0.822);
+    background-image: url(images/aboriginal-art);
     margin: 0;
     padding: 0;
 }
 .container{
     background-color: bisque;
+    
     font-family: 'Thasadith';
     font-size: 2em;
     display: flex;
